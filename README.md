@@ -4,24 +4,15 @@ This guide provides instructions for obtaining, compiling and running a simple
 case for the GMTB single column model (SCM). The SCM code calls CCPP-compliant
 physics schemes through the CCPP infrastructure code. As such, it requires the
 CCPP infrastructure code and physics code, both of which are included as git
-submodules within the SCM code. This package can be considered a simple example
+subtrees within the SCM code. This package can be considered a simple example
 for an atmospheric model to interact with physics through the CCPP.
 
 ## Obtaining Code
 1. Download a compressed file or clone the source using
-  * `git clone https://[username]@github.com/NCAR/gmtb-scm.git`
+  * `git clone https://[username]@github.com/NCAR/gmtb-scm-release.git`
   and enter your github password when prompted.
 2. Change directory into the project.
-  * `cd gmtb-scm`
-3. Initialize the CCPP infrastructure and physics submodules.
-  * `git submodule init`
-4. Update (download) the submodules.
-  * `git submodule update`
-  and, if asked, enter your github credentials again. If the machine is running an older
-  version of git and you are denied access, you may need to configure the
-  submodule URLs before repeating step 4 by executing this command:
-    * `git config submodule.ccpp-framework.url https://[username]@github.com/NCAR/ccpp-framework.git`
-    * `git config submodule.ccpp-physics.url https://[username]@github.com/NCAR/ccpp-physics.git`
+  * `cd gmtb-scm-release-v1.0`
 
 ## Building and Compiling the SCM with CCPP
 1. Run the CCPP prebuild script to match required physics variables with those
