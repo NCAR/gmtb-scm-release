@@ -8,11 +8,12 @@ subtrees within the SCM code. This package can be considered a simple example
 for an atmospheric model to interact with physics through the CCPP.
 
 ## Obtaining Code
-1. Download a compressed file or clone the source using
-  * `git clone https://[username]@github.com/NCAR/gmtb-scm-release.git`
+1. Download a compressed file from the releases tab, or clone the source using
+  * `git clone https://[username]@github.com/NCAR/gmtb-scm-release.git gmtb-scm`
   and enter your github password when prompted.
 2. Change directory into the project.
-  * `cd gmtb-scm-release-v1.0`
+  * `cd gmtb-scm`
+3. Note that the release tarball will result in a directory named with the release tag.  Adjust instructions accordingly!
 
 ## Building and Compiling the SCM with CCPP
 1. Run the CCPP prebuild script to match required physics variables with those
